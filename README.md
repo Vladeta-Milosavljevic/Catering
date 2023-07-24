@@ -16,6 +16,7 @@ Example SPA catering site project made using Laravel, Inertia Js and React Js
 ### Dependencies
 
 * PHP development enviroment (like XAMPP) is required
+* If you are using XAMPP please put the project inside the htdocs folder in XAMPP. This is required.
 * Laravel is required
 
 ### Installing
