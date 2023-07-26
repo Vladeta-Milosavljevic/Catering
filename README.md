@@ -31,6 +31,11 @@ composer global require laravel/installer
 ### Executing the app
 
 * Activate PHP enviroment
+  
+* Generate App Key in the .env file
+```
+php artisan key:generate
+```
 
 * Run the following line in the terminal
 ```
@@ -40,6 +45,10 @@ npm run dev
 
 ```
 php artisan serve
+```
+*
+```
+php artisan key:generate
 ```
 
 ## Author
