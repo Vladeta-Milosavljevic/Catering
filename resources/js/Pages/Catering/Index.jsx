@@ -4,10 +4,7 @@ import Layout from "./Shared/Layout";
 import Carousel from "./Shared/components/Carousel";
 import ProductList from "./Shared/components/ProductList";
 
-export default function Index({
-    foodItems,
-    carouselImages,
-}) {
+export default function Index({ foodItems, carouselImages }) {
     return (
         <>
             <Head title="Home" />
