@@ -17,6 +17,7 @@ Example SPA catering site project made using Laravel, Inertia Js and React Js
 
 * PHP development enviroment (like XAMPP) is required
 * If you are using XAMPP please put the project inside the htdocs folder in XAMPP. This is required.
+* Node.js is required
 * Laravel is required
 
 ### Installing
@@ -48,7 +49,7 @@ npm install
 php artisan key:generate
 ```
 
-* Or run this command and copy the key to the APP_KEY= line in the .env file
+* Or run this command and copy the key from the terminal to the APP_KEY= line in the .env file
 ```
 php artisan key:generate --show
 ```
@@ -57,11 +58,10 @@ php artisan key:generate --show
 ```
 php artisan migrate --seed
 ```
+* Feel free to run this command several times to fiil the database to your liking
 ```
 php artisan db:seed --class=FoodSeeder
 ```
-
-
 
 
 * Run the following line in the terminal
