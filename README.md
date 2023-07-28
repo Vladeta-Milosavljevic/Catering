@@ -33,7 +33,7 @@ composer global require laravel/installer
 
 * Activate PHP enviroment
 * Copy .env.example into .env and setup the database
-* Open the projects root directory in the terminal
+* Open the project's root directory in the terminal
   
 
 * Install the necesary files
