@@ -31,9 +31,19 @@ composer global require laravel/installer
 ### Executing the app
 
 * Activate PHP enviroment
+* Copy .env.example into .env and setup the database
+* Open the projects root directory in the terminal
   
+
+* Install the necesary files
+```
+composer install
+```
+  
+```
+npm install
+```
 * Generate App Key in the .env file
-* 
 ```
 php artisan key:generate
 ```
@@ -54,8 +64,3 @@ php artisan serve
 
 Vladeta Milosavljevic
 
-
-
-## Acknowledgments
-
-My thanks goes to Jeffrey Way, the creator of Laracast. He has provided great material on Inertia Js which inspired me to make this project and to use Inertia/Laravel/React stack in the future.
