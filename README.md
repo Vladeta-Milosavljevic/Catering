@@ -39,14 +39,30 @@ composer global require laravel/installer
 ```
 composer install
 ```
-  
 ```
 npm install
 ```
+
 * Generate App Key in the .env file
 ```
 php artisan key:generate
 ```
+
+* Or run this command and copy the key to the APP_KEY= line in the .env file
+```
+php artisan key:generate --show
+```
+
+* Migrations and seeding
+```
+php artisan migrate --seed
+```
+```
+php artisan db:seed --class=FoodSeeder
+```
+
+
+
 
 * Run the following line in the terminal
   
