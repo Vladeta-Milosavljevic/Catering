@@ -40,13 +40,6 @@ class FoodController extends Controller
                     'name' => $foodItem->name,
                     'type' => $foodItem->type,
                     'tags' => $foodItem->tags,
-                    // 'carouselImages' => [
-                    //     Storage::url('images/anna-pelzer-IGfIGP5ONV0-unsplash'),
-                    //     Storage::url('images/lily-banse--YHSwy6uqvk-unsplash'),
-                    //     Storage::url('images/victoria-shes-UC0HZdUitWY-unsplash')
-                    // ],
-                    'carouselImages' => Storage::url('public/images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg'),
-                    // 'carouselImage3' => Storage::url('victoria-shes-UC0HZdUitWY-unsplash'),
                     'image' => str_contains($foodItem->image, "https") ? $foodItem->image : Storage::url($foodItem->image),
                 ]
             );
