@@ -1,6 +1,6 @@
 # Catering
 
-Example SPA catering site project made using Laravel, Inertia Js and React Js
+Example SPA catering site project made using Laravel, Inertia Js, React Js and Tailwind
 
 
 ## This Project includes the following:
