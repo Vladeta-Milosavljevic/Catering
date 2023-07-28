@@ -79,8 +79,8 @@ class FoodController extends Controller
             'food' => $food,
             'image' => str_contains($food->image, "https") ? $food->image : Storage::url($food->image),
             'can' => [
-                'edit' => Auth::user()->can('update', $food),
-                'delete' => Auth::user()->can('delete', $food),
+                'edit' => Auth::user() ? Auth::user()->can('update', $food) : false,
+                'delete' => Auth::user() ?  Auth::user()->can('delete', $food) : false,
             ]
         ]);
     }
