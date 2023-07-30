@@ -1,6 +1,6 @@
 # Catering
 
-Example SPA catering site project made using Laravel, Inertia Js and React Js
+Example SPA catering site project made using Laravel, Inertia Js, React Js and Tailwind
 
 
 ## This Project includes the following:
@@ -33,7 +33,7 @@ composer global require laravel/installer
 
 * Activate PHP enviroment
 * Copy .env.example into .env and setup the database
-* Open the projects root directory in the terminal
+* Open the project's root directory in the terminal
   
 
 * Install the necesary files
