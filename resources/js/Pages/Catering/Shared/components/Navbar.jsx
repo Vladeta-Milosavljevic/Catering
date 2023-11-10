@@ -90,7 +90,7 @@ export default function Navbar() {
                                         <span className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
                                             <button
                                                 type="button"
-                                                className="py-2 px-4 mt-2 inline-flex no-underline hover:text-black hover:underline text-gray-700 items-center  border border-transparent leading-4 rounded-md  dark:text-gray-400 bg-white dark:bg-gray-800  dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150"
+                                                className="py-2 px-4 mt-2 inline-flex no-underline hover:text-black hover:underline text-gray-700 items-center  border border-transparent leading-4 rounded-md bg-white focus:outline-none transition ease-in-out duration-150"
                                             >
                                                 {user.name}
 

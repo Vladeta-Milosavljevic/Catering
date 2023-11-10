@@ -4,7 +4,8 @@ import Pagination from "./Pagination";
 import { debounce } from "lodash";
 import { router } from "@inertiajs/react";
 
-export default function ProductList({ foodItems }) {
+export default function ProductList({ foodItems, filters }) {
+    const search = filters && filters.search ? filters.search : "";
     const foodList = foodItems.data;
     function searchHandler(event) {
         router.get(
@@ -34,6 +35,7 @@ export default function ProductList({ foodItems }) {
                                 <input
                                     type="text"
                                     placeholder="Search..."
+                                    defaultValue={search === "" ? "" : search}
                                     className="border px-2 rounded-lg"
                                     onChange={debouncedSearchHandler}
                                 />
@@ -53,7 +55,10 @@ export default function ProductList({ foodItems }) {
                     ))}
                 </div>
                 <div className="container mx-auto flex items-center flex-wrap">
-                    <Pagination links={foodItems.links} style="flex flex-wrap" />
+                    <Pagination
+                        links={foodItems.links}
+                        style="flex flex-wrap"
+                    />
                 </div>
             </section>
         </>

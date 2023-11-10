@@ -22,7 +22,7 @@ export default function Item({ id, name, type, tags, image }) {
 
                             href={route("home")}
                             data={{ tag: tag }}
-                            className="list-none py-1 px-3 mr-2 text-xs  rounded-lg bg-gray-100 text-gray-800  font-medium dark:bg-gray-700 dark:text-gray-400 border border-gray-500"
+                            className="list-none py-1 px-3 mr-2 text-xs  rounded-lg bg-gray-100 text-gray-800 font-medium border-gray-500"
                         >
                             {tag}
                         </Link>

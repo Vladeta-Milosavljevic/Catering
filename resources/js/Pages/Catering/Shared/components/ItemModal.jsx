@@ -23,7 +23,7 @@ export default function ItemModal({ isOpen, setIsOpen, routeData, id }) {
                             href={route(routeData, id)}
                             method="delete"
                             as="button"
-                            className="mt-6 ml-6 inline-flex items-center px-4 py-2 bg-red-700 dark:bg-gray-200 border border-transparent rounded-md font-semibold text-xs text-white dark:text-gray-800 uppercase tracking-widest hover:bg-red-600 dark:hover:bg-white focus:bg-red-500 dark:focus:bg-white active:bg-gray-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150"
+                            className="mt-6 ml-6 inline-flex items-center px-4 py-2 bg-red-700 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-600  focus:bg-red-500  active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150"
                             onClick={() =>
                                 setTimeout(() => {
                                     setIsOpen(false);
@@ -33,7 +33,7 @@ export default function ItemModal({ isOpen, setIsOpen, routeData, id }) {
                             Confirm
                         </Link>
                         <button
-                            className="mt-6 ml-6 inline-flex items-center px-4 py-2 bg-green-700 dark:bg-gray-200 border border-transparent rounded-md font-semibold text-xs text-white dark:text-gray-800 uppercase tracking-widest hover:bg-green-600 dark:hover:bg-white focus:bg-green-500 dark:focus:bg-white active:bg-gray-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150"
+                            className="mt-6 ml-6 inline-flex items-center px-4 py-2 bg-green-700 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-600  focus:bg-green-500  active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150"
                             onClick={() => setIsOpen(false)}
                         >
                             Cancel
