@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\Food;
 
 class DatabaseSeeder extends Seeder
 {
@@ -45,5 +46,6 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('gile12345'),
             'isAdmin' => false,
         ]);
+        Food::factory(100)->create();
     }
 }
